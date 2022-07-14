@@ -18,9 +18,3 @@ Its a <b>TodoList</b> webapp where people can make a list of tasks and edit it a
 - ```npm i```
 - ```node app.js```
 - Project is served on http://localhost:3000/
-
-## Docker Setup:
-- First make sure your laptop has Docker
-- Open terminal, run ```docker pull kitarp29/todolist:1.0```
-- Run ```docker run -e  DB_URL -d --name pk -p 3000:3000 kitarp29/todolist:1.0```
-- The API is running at  [http://localhost:3000/](http://localhost:3000/)
