@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To do list</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="box" id="heading">
+      <h1><%=pk%></h1>
+    </div>
+    <div class="box">
+
+
+        <%lily.forEach(function(item){%>
+          <form action="/delete" method="post">
+          <div class="item">
+            <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
+          <p><%= item.name %></p>
+          </div>
+      <%})%>
+  </form>
+      <form class="item" action="/" method="post">
+      <input type="text" name="lily" placeholder="New item" autocomplete="off">
+      <button type="submit" name="button">+</button>
+
+      </form>
+    </div>
+
+
+
+<footer><h2><b>Type in the blank Space to add activity .<br>And select the button to check it off </b></h2>
+
+
+
+</h4>
+</footer>
+  </body>
+</html>
